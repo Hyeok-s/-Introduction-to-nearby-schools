@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/puple">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="내용 수정"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:srcCompat="@drawable/out"
+            app:maxImageSize="40dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            app:fabSize="mini"/>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/gold" />
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="금복주류"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@color/m4_1"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textview8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="서문에 위치한 술집이다. 건양대 근처 술집중에는 가장 인기가 많다고 말할 수 있다.\n하지만 생각에는 다른 술집이 너무 별로라 이곳을 찾는 사람들이 많은 것 같고 위치상 술집들의 정중앙에 있어 위치가 되게 좋은 것 같다. 안주들은 대게로 엄청 비싸진 않지만 양이 매우 적다. \n또한 맛부분에서는 그닥 맛이 있다고 느껴지지는 않는다. \n 다만 위치가 좋고 다른 술집이 너무 갈곳이 없어 여기에 자주 사람이 몰리는 것 같다."
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="@color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:text="별점 : "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="25dp"/>
+
+        <RatingBar
+            android:isIndicator="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="3"
+            android:stepSize="0.5"/>
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="메뉴판"/>
+    </LinearLayout>
+</LinearLayout>

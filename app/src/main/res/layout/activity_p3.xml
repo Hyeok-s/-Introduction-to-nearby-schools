@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/m1">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="내용 수정"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:srcCompat="@drawable/out"
+            app:maxImageSize="40dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            app:fabSize="mini"/>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/foot" />
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="풋살장"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@color/m3_1"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textview13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="건양대학교 안에 위치한 풋살장이다. \n 풋살장 크기는 일반 풋살장과 비슷하여 즐기기에는 충분하며 이번에 바뀐 총학생회에서 풋살공을 빌려주는등의 복지를 도와주어 충분히 공이 없이가도 대여를 해서 즐길 수 있다. \n다만 관리가 잘 되지 않아 안에 쓰레기가 있고 풋살장은 대게 예약으로 이루어지는데 풋살장이 많지 않아 예약하기 힘든 모습을 보여준다. "
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="@color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:text="별점 : "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="25dp"/>
+
+        <RatingBar
+            android:isIndicator="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="3.0"
+            android:stepSize="0.5"/>
+    </LinearLayout>
+</LinearLayout>

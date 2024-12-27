@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tab">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/main1">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/iv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/school" />
+
+                <Button
+                    android:id="@+id/top1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/top2"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/top1"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/top3"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/top2"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/top4"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/top3"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/top5"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/top4"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/left1"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/left2"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/left1"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/left3"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/left2"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/left4"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left1"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/left5"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left4"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/m1"
+                    android:layout_width="48dp"
+                    android:layout_height="32dp"
+                    android:layout_below="@+id/left1"
+                    android:layout_toEndOf="@+id/top3"
+                    android:background="@drawable/round_button"
+                    android:text="학식"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/m2"
+                    android:layout_width="48dp"
+                    android:layout_height="32dp"
+                    android:layout_below="@+id/left3"
+                    android:layout_toEndOf="@+id/top4"
+                    android:background="@drawable/round_button1"
+                    android:text="한솔"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/m3"
+                    android:layout_width="52dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/left1"
+                    android:layout_toEndOf="@+id/top2"
+                    android:background="@drawable/round_button2"
+                    android:text="블루포트"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/m4"
+                    android:layout_width="52dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/left2"
+                    android:layout_toEndOf="@+id/top3"
+                    android:background="@drawable/round_button3"
+                    android:text="건양뷔페"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="서문"
+                    android:layout_toStartOf="@id/top2"
+                    android:layout_below="@+id/left2"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/tv1"
+                    android:layout_below="@+id/left2"
+                    android:clickable="true"
+                    app:fabSize="mini"
+                    android:backgroundTint="@color/black"
+                    app:srcCompat="?attr/actionModeCloseDrawable" />
+
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/iv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/school" />
+
+                    <Button
+                        android:id="@+id/top_1"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/top_2"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/top_1"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/top_3"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/top_2"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/top_4"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/top_3"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/top_5"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/top_4"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/left_1"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/left_2"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/left_1"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/left_3"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/left_2"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/left_4"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/left_1"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/left_5"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/left_4"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/p1"
+                        android:layout_width="57dp"
+                        android:layout_height="32dp"
+                        android:layout_below="@+id/left_1"
+                        android:layout_toEndOf="@+id/top_3"
+                        android:background="@drawable/round_button"
+                        android:text="스티커사진"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/p2"
+                        android:layout_width="52dp"
+                        android:layout_height="32dp"
+                        android:layout_below="@+id/left_3"
+                        android:layout_toStartOf="@+id/top_3"
+                        android:background="@drawable/round_button1"
+                        android:text="짐나지움"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/p3"
+                        android:layout_width="52dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/left_1"
+                        android:layout_toEndOf="@+id/top_4"
+                        android:background="@drawable/round_button2"
+                        android:text="풋살장"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/p4"
+                        android:layout_width="52dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/left_2"
+                        android:layout_toEndOf="@+id/top_2"
+                        android:background="@drawable/round_button3"
+                        android:text="농구장"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="서문"
+                        android:layout_toStartOf="@id/top_2"
+                        android:layout_below="@+id/left_2"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fab2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/tv2"
+                        android:layout_below="@+id/left_2"
+                        android:clickable="true"
+                        app:fabSize="mini"
+                        android:backgroundTint="@color/black"
+                        app:srcCompat="?attr/actionModeCloseDrawable" />
+                </RelativeLayout>
+            </FrameLayout>
+
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@color/mp"></TabWidget>
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>

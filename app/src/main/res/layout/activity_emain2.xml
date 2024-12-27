@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/leftmoon" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이곳은 서문입니다. 아래 학교 화살표를 눌러 학교로 갈 수 있습니다."
+            android:background="@color/m"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="right"/>
+        <Button
+            android:id="@+id/top1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/top2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/top1"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/top3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/top2"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/top4"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/top3"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/top5"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/top4"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/left1"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/left2"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/left1"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/left3"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/left2"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/left4"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/left1"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/left5"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/left4"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/m5"
+            android:layout_width="48dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/left3"
+            android:layout_toStartOf="@+id/top5"
+            android:background="@drawable/round_button"
+            android:text="인생고기"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/m6"
+            android:layout_width="48dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/left3"
+            android:layout_toEndOf="@+id/top1"
+            android:background="@drawable/round_button1"
+            android:text="두찜"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/m7"
+            android:layout_width="52dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/left5"
+            android:layout_toEndOf="@+id/top3"
+            android:background="@drawable/round_button2"
+            android:text="함흥면옥"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/m8"
+            android:layout_width="52dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/left2"
+            android:layout_toEndOf="@+id/top3"
+            android:background="@drawable/round_button3"
+            android:text="금복주류"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학교"
+            android:layout_toEndOf="@+id/top4"
+            android:layout_above="@+id/left3"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_toRightOf="@+id/tv"
+            android:layout_above="@+id/left3"
+            android:backgroundTint="@color/black"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/ic_media_play" />
+    </RelativeLayout>
+</FrameLayout>

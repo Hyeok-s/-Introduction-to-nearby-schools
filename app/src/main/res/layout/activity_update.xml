@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/yellow">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="36dp"
+            android:src="@drawable/down1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="수정할 글의 내용을 입력해 주세요."
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="23dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="이곳을 눌러 입력"
+        android:inputType="text"
+        android:textColor="@color/black"/>
+
+        <!--을 사용해줘도 editText안에 한글이 안써짐
+        android:privateImeOptions="defaultInputmode=korean"
+        -->
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="수정 완료" />
+</LinearLayout>
